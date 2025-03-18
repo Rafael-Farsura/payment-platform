@@ -1,0 +1,17 @@
+#### Transactions controller
+@baseURL = http://localhost:3000
+
+
+### @name FindAllTransacations
+GET {{baseURL}}/transactions/
+Accept: application/json
+
+
+###
+POST {{baseURL}}/transactions/
+Content-Type: application/json
+
+{
+  "amount": 200,
+  "paymentType": "pix"
+}
